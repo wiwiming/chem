@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>化学实验</title>
+		<style>
+		body {
+			background-color: white;
+			color: #333;
+			background-image: url('背景图.jpg'); /* 这里填入图片的路径 */
+			background-repeat: no-repeat; /* 背景图片不重复 */
+			background-size: cover; /* 背景图片覆盖整个页面 */
+		}	
+		.head{
+			margin-top: 10%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.head ul {
+			width: 100%;
+			height: 150px;
+			margin: 0 auto;
+			background-color:royalblue;
+			opacity: 0.8
+		}
+		
+		.head ul li {
+			width: 100%;
+			line-height: 150px;
+			text-align: center;
+			font-size: 50px;
+			font-weight: bolder;
+			text-decoration: none;
+			list-style: none;
+		}
+		
+		
+			.main {
+				width: 400px;
+				height: 400px;
+				margin-top: 10%;
+				margin-left: auto;
+				margin-right: auto;
+				background-color: steelblue;
+				color: hotpink;
+				border-radius: 15px;
+				display: flex;
+				flex-direction: column;
+				opacity: 0.9;
+				
+			}
+			.card{
+				width: 300px;
+				height: 50px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 40px;
+				background: linear-gradient(to bottom, lightblue, greenyellow);
+				/*background-color: steelblue;*/
+				border-radius: 10px;
+				
+				
+			}
+			
+			.card a {
+				display:inline-block;/*把a变成行内块*/
+				width: 300px;
+				line-height: 30px;
+				color: black;
+				font-family: "楷体";
+				font-size: 25px;
+				padding: 100px;
+				padding-top: 10px;
+				text-decoration: none;
+				
+				
+			}
+			.card:hover  {
+				background-color: wheat;
+			}
+			.card:hover a {
+				color: royalblue;
+				font-size: 28px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="head">
+			<ul>
+				<li>电化学解锁吡啶间位C-H磺酰化反应</li>
+			</ul>
+		</div>
+		<div class="body">
+			<div class="main">
+				<div class="card" style="margin-top: 10%;">
+					<a href="http://">实验目的</a>
+				</div>
+				<div class="card">
+					<a href="http://">实验原理</a>
+				</div>
+				<div class="card">
+					<a href="实验视频.html">实验视频</a>
+				</div>
+				<div class="card">
+					<a href="index1.html">虚拟操作</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="foot">
+			
+		</div>
+	</body>
+</html>

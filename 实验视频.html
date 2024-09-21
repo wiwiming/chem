@@ -1,0 +1,77 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>视频播放界面</title>  
+    <style>  
+        body, html {
+			background-image: url('背景图.jpg'); /* 这里填入图片的路径 */
+			background-repeat: no-repeat; /* 背景图片不重复 */
+			background-size: cover; /* 背景图片覆盖整个页面 */
+            margin: 0;  
+            padding: 0;  
+            width: 100%;  
+            height: 100%;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center; /* 使子元素垂直居中 */  
+            background-color: #f0f0f0;  
+        }  
+  
+        .video-container {  
+            display: flex;  
+            flex-direction: column; /* 垂直方向排列子元素 */  
+            align-items: center; /* 垂直居中子元素 */  
+            width: 90%;  
+            max-width: 900px;  
+            position: relative;  
+			border-radius: 20px;
+			border: 50px solid black;
+        }  
+  
+        .video-container video {  
+            width: 100%; /* 视频宽度填充容器 */  
+            /* 高度由宽高比决定，这里不设置 */  
+        }  
+  
+        .video-info {  
+            text-align: center; /* 使标题和描述居中 */  
+            margin-top: 20px; /* 与视频下方保持一定距离 */  
+        }  
+  
+        .return-button {  
+            position: fixed;  
+            bottom: 10%;  
+            right: 10%;  
+            padding: 10px 20px;  
+            background-color: #007bff;  
+            color: white;  
+            border: none;  
+            cursor: pointer;  
+            border-radius: 5px; 
+			
+        }  
+  
+        .return-button:hover {  
+            background-color: #0056b3;  
+        }  
+    </style>  
+</head>  
+<body>  
+  
+<div class="video-container">  
+    <video controls>  
+        <source src="实验视频.mp4" type="video/mp4">  
+        Your browser does not support the video tag.  
+    </video>  
+    <!-- <div class="video-info">  
+        <h2>视频标题</h2>  
+        <p>这里是视频的简短描述。</p>  
+    </div>  -->
+</div>  
+  
+<button class="return-button" onclick="window.history.back();">返回</button>  
+  
+</body>  
+</html>
